@@ -91,6 +91,18 @@ describe('ComponentName', () => {
 
 ## Contributing Guidelines
 
+### Pre-commit Hooks
+This project uses Husky and lint-staged to run quality checks before each commit:
+- ESLint will check and fix code style
+- Prettier will format the code
+- Jest will run tests related to changed files
+
+The checks run automatically when you commit changes. If any check fails:
+1. Review the error messages
+2. Fix the issues
+3. Stage your changes
+4. Try committing again
+
 ### Commit Messages
 We follow the Conventional Commits specification:
 - Format: `<type>(<scope>): <description>`
